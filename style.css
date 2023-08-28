@@ -24,7 +24,6 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  
 }
 body * {
   font-family: "Inter", sans-serif;
