@@ -24,6 +24,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -31,8 +32,10 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 365px;
   margin: 56px auto 0px;
+ 
 }
 #profile {
   text-align: center;
@@ -91,7 +94,7 @@ body * {
   font-weight: 500;
   line-height: 24px;
   margin: 0px auto 8px;
-  color: white;
+  
 }
 ul {
   list-style: none;
@@ -334,4 +337,13 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 15px;
+}
+ 
+@media (min-width: 536px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+  .light {
+    --bg-url: url(./assets/desktop.light.jpg)
+  }
 }
